@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link href="ab.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <p id="a"></p>
+    <P id="b"></P>
+    <script>
+        var object={
+            name:"Bhavya",
+            age:10,
+            grade:6,
+        }
+        var myJSON=JSON.stringify(object)
+        var newobject=JSON.parse(myJSON)
+        document.getElementById("a").innerHTML=myJSON
+        document.getElementById("b").innerHTML=newobject
+        
+    </script>
+</body>
+</html>

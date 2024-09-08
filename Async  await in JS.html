@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link href="ab.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <p id="c"></p>
+    <script>
+        async function add(a,b) {
+            var responce=await a+b
+            display(responce)
+        }
+        function display(sum){
+            document.getElementById("c").innerHTML=sum
+        }
+        add(6,8)
+    </script>
+</body>
+</html>
